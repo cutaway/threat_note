@@ -24,7 +24,7 @@ RUN apt-get install -y --no-install-recommends \
   useradd -r -g threatnote -d /home/threat_note -s /sbin/nologin -c "threatnote user" threatnote
 
 WORKDIR /home
-RUN git clone https://github.com/defpoint/threat_note.git && \
+RUN git clone https://github.com/cutaway/threat_note.git && \
   chown -R threatnote:threatnote /home/threat_note && \
   cd threat_note && \
   pip install -r requirements.txt
