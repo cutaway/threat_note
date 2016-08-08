@@ -33,5 +33,6 @@ USER threatnote
 ENV HOME /home/threat_note
 ENV USER threatnote
 WORKDIR /home/threat_note
+RUN mkdir db
 EXPOSE 8888
 CMD ["python", "/home/threat_note/threat_note/threat_note.py", "-H 0.0.0.0", "-p 8888"]
